@@ -1,0 +1,16 @@
+DirectoryIndex to-do.php
+
+ErrorDocument 404 /404.html
+
+#disable directory browsing
+	#Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
+            
+            # enable directory browsing
+            Options All +Indexes
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+php_value date.timezone 'Africa/Lagos'
